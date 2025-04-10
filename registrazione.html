@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="logo-sito.png">
+</head>
+<body>
+
+    <div id="body-tre">
+        <header class="header">
+            <h1 onclick="index()"><span id="title-diff-one">[CHR</span><span id="title-diff-two">OMA</span><span id="title-diff-three">TICA]</span></h1>
+            <i class="fa-solid fa-bars" onclick="navbar()"></i>
+            <div class="buttons">
+                <p id="gopro">Go Pro</p>
+                <div class="line"></div>
+                <button onclick="registra()" id="login">Accedi</button>
+                <button onclick="registra()" id="register">Registrati</button>
+            </div>
+        </header>
+    
+        <div class="container-registrazione">
+            <h1>Ciao!</h1>
+            <p>Use la tua email o un'altro servizio per accedere</p>
+            <div class="bottoni">
+                <button onclick="avvia()" id="google">
+                    <i class="fa-brands fa-google"></i>
+                    Continua con Google
+                </button>
+                <button onclick="avvia()" id="google">
+                    <i class="fa-brands fa-apple"></i>
+                    Continua con Apple
+                </button>
+                <button onclick="avvia()" id="email">Continua con l'email</button>
+            </div>
+            <div class="termini">
+                <p>Continuando, accetti i nostri <span id="terms">Termini di Servizio</span>.</p>
+                <p>Leggi la nostra <span id="terms">Policy sulla Privacy</span>.</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+    <div id="navbar">
+        <div class="testo">
+            <h2 id="genera">Generatore di Palette</h2>
+            <h2 id="esplora-palette">Esplora le Palette</h2>
+            <h2 id="selettore">Selettore di immagini</h2>
+            <h2 id="contrasto">Verificatore del contrasto</h2>
+            <h2 id="fonts">Lista dei font</h2>
+            <h3>ALTRI STRUMENTI</h3>
+            <p>Lista dei colori</p>
+            <p>Naviga tra i gradienti</p>
+            <p>Crea un gradiente</p>
+            <p>Crea una palette di gradienti</p>
+            <p>Selettore dei colori</p>
+            <p>Creatore di collage</p>
+            <p>Convertitore immagini</p>
+            <h3>APP</h3>
+            <p>App IOS</p>
+            <p>App Android</p>
+            <p>Plugin di Figma</p>
+            <p>Estensione di Chrome</p>
+            <p>Pagina Instagram</p>
+            <h3>ACCOUNT</h3>
+            <p>Accedi</p>
+            <p>Registrati</p>
+            <p>Go Pro</p>
+        </div> 
+    </div>
+</div>
+
+<div>
+    <span id="uno-palla"></span>
+    <span id="due-palla"></span>
+    <span id="tre-palla"></span>
+</div>
+
+<div>
+    <span id="quattro-palla"></span>
+    <span id="cinque-palla"></span>
+    <span id="sei-palla"></span>
+</div>
+
+<div class="loader">
+    <span></span>
+</div>
+
+    <script src="script.js"></script>
+    <script src="scriptLogin.js"></script>
+</body>
+</html>

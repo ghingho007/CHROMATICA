@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHROMATICA - Il generatore super veloce di palette</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="logo-sito.png" type="png">
+</head>
+<body>
+    <div id="pagina">
+        <header class="header">
+            <h1 onclick="index()"><span id="title-diff-one">[CHR</span><span id="title-diff-two">OMA</span><span id="title-diff-three">TICA]</span></h1>
+            <i class="fa-solid fa-bars" onclick="navbar()"></i>
+            <div class="buttons">
+                <p id="gopro">Go Pro</p>
+                <div class="line"></div>
+                <button onclick="registra()" id="login">Accedi</button>
+                <button onclick="registra()" id="register">Registrati</button>
+            </div>
+        </header>
+    
+        <div class="container-total">
+            <div class="container-left">
+                <h1>Generatore di <br> 
+                    palette super <br> 
+                    veloce! </h1>
+                <p>Genera velocemente palette di colori <br> 
+                per creare grandi opere d'arte.</p>
+                <button id="avvia" onclick="avvia()">Avvia il generatore!</button>
+                <button id="community">Scopri la community</button>
+            </div>
+            <div class="container-right">
+                <div id="pc-base"></div>
+                <div class="pc-piccolo" onclick="avvia()">
+                    <span id="one"></span>
+                    <span id="two"></span>
+                    <span id="three"></span>
+                    <span id="four"></span>
+                    <span id="five"></span>   
+                </div>
+                
+                <div class="pc-grande">
+                    <video id="video" type="video/mp4" src="Trending Color Palettes - Coolors - Google Chrome 2025-04-07 13-46-08 - Trim.mp4" autoplay muted loop ></video>
+                    <div id="pc-basedue"></div>
+                    <div id="pc-basedue-alto"></div>
+                </div>
+                
+                <a href="https://www.wwf.it/pandanews/?utm_source=google&utm_medium=cpc_grant&utm_campaign=20344367885&ad_group=151507261616&match_type=b&device=c&keyword=wwf%20ambiente&utm_term=wwf%20ambiente&gad_source=1&gclid=Cj0KCQjw782_BhDjARIsABTv_JCS_aH2Ah_lI4_wPOvd6StKGU-IwN1asjcQWoFC4l4W3hS3l6haUK4aAmMGEALw_wcB" target="_blank"><img id="plant" src="plant.png"></a>
+            </div>
+        </div>
+        
+    
+        <div class="esplora">
+            <div class="explore">Esplora</div>
+            <img class="curved" src="curved-arrow__1_-removebg-preview.png">
+        </div>
+    
+        
+        <div class="crea" onclick="avvia()">
+            <div class="create">Crea palette</div>
+            <img id="fre-ruo" src="freccia-ruotata.png">
+        </div>
+    
+        <footer class="footer">
+            <h2>Usato da 10+ milioni di utenti e da grandi compagnie</h2>
+            <div class="compagnie">
+                <a target="_blank" href="https://www.airbnb.com"><img src="airbnb.png" height="70px"></a>
+                <a target="_blank" href="https://www.android.com"><img src="android.png" height="70px"></a>
+                <a target="_blank" href="https://www.apple.com"><img src="apple-logo.png" height="70px"></a>
+                <a target="_blank" href="https://www.dreamworks.com"><img src="dreamworks (2).png" height="70px"></a>
+                <a target="_blank" href="https://www.dropbox.com"><img src="dropbox.png" height="70px"></a>
+                <a target="_blank" href="https://www.ea.com/sports"><img src="electronics-arts.png" height="70px"></a>
+                <a target="_blank" href="https://www.disney.com"><img src="icons8-disney-1-96.png" height="70px"></a>
+                <a target="_blank" href="https://www.netflix.com"><img src="netflix.png" height="70px"></a>
+                <a target="_blank" href="https://www.ubisoft.com"><img src="ubisoft.png" height="70px"></a>
+                <a target="_blank" href="https://www.warnerbros.com"><img src="warner-bros.svg" height="70px"></a>
+            </div>
+        </footer>
+    
+        <div class="bottom-text">
+            <div class="tools">
+                <h3>Strumenti</h3>
+                <p>Genera le tue palette</p>
+                <p>Esplora le palette popolari</p>
+                <p>Estrai le palette da immagini</p>
+                <p>Verificatore del contrasto</p>
+                <p>Vedi la preview delle tue palette</p>
+                <p>Ricolora i tuoi design</p>
+                <p>Selettore di colori</p>
+                <p>Naviga tra i font gratuiti</p>
+            </div>
+            <div class="more">
+                <h3>Altro</h3>
+                <p>Lista dei colori</p>
+                <p>Naviga tra i gradienti</p>
+                <p>Crea un gradiente</p>
+                <p>Crea una palette di gradienti</p>
+                <p>Convertitore di immagini</p>
+                <p>Crea un collage</p>
+                <p>Generatore di font</p>
+            </div>
+            <div class="app">
+                <h3>App</h3>
+                <p>App IOS</p>
+                <p>App Android</p>
+                <p>Plugin di Figma</p>
+                <p>Estensione di Adobe</p>
+                <p>Estensione di Chrome</p>
+                <p>Pagina Instagram</p>
+            </div>
+            <div class="company">
+                <h3>Compagnia</h3>
+                <p>Listino prezzi</p>
+                <p>License</p>
+                <p>Termini di servizio</p>
+                <p>Policy della privacy</p>
+                <p>Policy dei cookies</p>
+                <p>Controlla i cookies</p>
+                <p>Centro assistenza</p>
+                <p>Sponsorizza</p>
+                <p>Affiliati</p>
+                <p>Contatti</p>
+            </div>
+        </div>
+    
+        <hr>
+    
+    
+        <div class="last-footer">
+            <p>&copy; CHROMATICA di <span id="nome">Lorenzo Tomaino.</span> <br> 
+                Da un creativo a tutti gli altri.</p>
+            <div class="imgs">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+    
+        <div id="navbar">
+            <div class="testo">
+                <h2 id="genera">Generatore di Palette</h2>
+                <h2 id="esplora-palette">Esplora le Palette</h2>
+                <h2 id="selettore">Selettore di immagini</h2>
+                <h2 id="contrasto">Verificatore del contrasto</h2>
+                <h2 id="fonts">Lista dei font</h2>
+                <h3>ALTRI STRUMENTI</h3>
+                <p>Lista dei colori</p>
+                <p>Naviga tra i gradienti</p>
+                <p>Crea un gradiente</p>
+                <p>Crea una palette di gradienti</p>
+                <p>Selettore dei colori</p>
+                <p>Creatore di collage</p>
+                <p>Convertitore immagini</p>
+                <h3>APP</h3>
+                <p>App IOS</p>
+                <p>App Android</p>
+                <p>Plugin di Figma</p>
+                <p>Estensione di Chrome</p>
+                <p>Pagina Instagram</p>
+                <h3>ACCOUNT</h3>
+                <p>Accedi</p>
+                <p>Registrati</p>
+                <p>Go Pro</p>
+            </div> 
+        </div>
+    </div>
+ 
+    
+
+    <div class="loader">
+        <span></span>
+    </div>
+
+
+    
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

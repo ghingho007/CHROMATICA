@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generatore di Palette</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo-sito.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header id="header-palette" class="header">
+        <h1 onclick="index()"><span id="title-diff-one">[CHR</span><span id="title-diff-two">OMA</span><span id="title-diff-three">TICA]</span></h1>
+        <i class="fa-solid fa-bars" onclick="navbar()"></i>
+        <div class="buttons">
+            <p id="gopro">Go Pro</p>
+            <div class="line"></div>
+            <button onclick="registra()" id="login">Accedi</button>
+            <button onclick="registra()" id="register">Registrati</button>
+        </div>
+    </header>
+    <header id="header-two" class="header-two">
+        <div class="barra">
+            <p>Clicca la barra spaziatrice per generare nuove palette!</p>
+        </div>
+        <div class="tool">
+            <div class="rotate">
+                <p id="annulla">Annulla</p>
+                <i id="undoBtn" class="fa-solid fa-rotate-left"></i>
+                <i id="redoBtn" class="fa-solid fa-rotate-right"></i>
+                <p id="ripeti">Ripeti</p>
+            </div>
+            <div class="line"></div>
+            <div class="sun">
+                <i class="fa-solid fa-sun"></i>
+                <p>Modalità scura</p>
+            </div>
+            <div class="line"></div>
+            <div class="view">
+                <i class="fa-solid fa-eye"></i>
+                <p>View</p>
+            </div>
+            <div class="line"></div>
+            <div class="share">
+                <i class="fa-solid fa-share-nodes"></i>
+                <p>Share</p>
+            </div>
+            <div class="line"></div>
+            <div class="save">
+                <i class="fa-solid fa-bookmark"></i>
+                <p>Save</p>
+            </div>
+        </div>  
+    </header>
+
+    <div class="container-all">
+        <span class="primo-colore" id="prima">
+            <i id="ics" class="fa-solid fa-xmark">Cancella colore</i>
+            <i class="fa-solid fa-heart">Salva nei preferiti</i>
+            <i id="lock-one" onclick="apriLucchetto()" class="fa-solid fa-lock">Sblocca</i>
+            <i id="open-one" onclick="chiudiLucchetto()" class="fa-solid fa-lock-open">Blocca</i>
+            <i id="copy-hex" class="fa-solid fa-copy">Copia codice colore</i>
+        </span>
+        <span id="seconda">
+            <i id="ics" class="fa-solid fa-xmark">Cancella colore</i>
+            <i class="fa-solid fa-heart">Salva nei preferiti</i>
+            <i id="lock-two" onclick="apriLucchettodue()" class="fa-solid fa-lock">Sblocca</i>
+            <i id="open-two" onclick="chiudiLucchettodue()" class="fa-solid fa-lock-open">Blocca</i>
+            <i class="fa-solid fa-copy">Copia codice colore</i>
+        </span>
+        <span id="terza">
+            <i id="ics" class="fa-solid fa-xmark">Cancella colore</i>
+            <i class="fa-solid fa-heart">Salva nei preferiti</i>
+            <i id="lock-three" onclick="apriLucchettotre()" class="fa-solid fa-lock">Sblocca</i>
+            <i id="open-three" onclick="chiudiLucchettotre()" class="fa-solid fa-lock-open">Blocca</i>
+            <i class="fa-solid fa-copy">Copia codice colore</i>
+        </span>
+        <span id="quarta">
+            <i id="ics" class="fa-solid fa-xmark">Cancella colore</i>
+            <i class="fa-solid fa-heart">Salva nei preferiti</i>
+            <i id="lock-four" onclick="apriLucchettoquattro()" class="fa-solid fa-lock">Sblocca</i>
+            <i id="open-four" onclick="chiudiLucchettoquattro()" class="fa-solid fa-lock-open">Blocca</i>
+            <i class="fa-solid fa-copy">Copia codice colore</i>
+        </span>
+        <span id="quinta">
+            <i id="ics" class="fa-solid fa-xmark">Cancella colore</i>
+            <i class="fa-solid fa-heart">Salva nei preferiti</i>
+            <i id="lock-five" onclick="apriLucchettocinque()" class="fa-solid fa-lock">Sblocca</i>
+            <i id="open-five" onclick="chiudiLucchettocinque()" class="fa-solid fa-lock-open">Blocca</i>
+            <i class="fa-solid fa-copy">Copia codice colore</i>
+        </span>
+    </div>
+
+    <div id="navbar">
+        <div class="testo">
+            <h2 id="genera">Generatore di Palette</h2>
+            <h2 id="esplora-palette">Esplora le Palette</h2>
+            <h2 id="selettore">Selettore di immagini</h2>
+            <h2 id="contrasto">Verificatore del contrasto</h2>
+            <h2 id="fonts">Lista dei font</h2>
+            <h3>ALTRI STRUMENTI</h3>
+            <p>Lista dei colori</p>
+            <p>Naviga tra i gradienti</p>
+            <p>Crea un gradiente</p>
+            <p>Crea una palette di gradienti</p>
+            <p>Selettore dei colori</p>
+            <p>Creatore di collage</p>
+            <p>Convertitore immagini</p>
+            <h3>APP</h3>
+            <p>App IOS</p>
+            <p>App Android</p>
+            <p>Plugin di Figma</p>
+            <p>Estensione di Chrome</p>
+            <p>Pagina Instagram</p>
+            <h3>ACCOUNT</h3>
+            <p>Accedi</p>
+            <p>Registrati</p>
+            <p>Go Pro</p>
+        </div> 
+    </div>
+
+    <footer class="footer-palette">
+        <button id="generate">Genera</button>
+        <p>Tieni premuto su un colore per <br>
+            accedere ai diversi strumenti.</p>
+    </footer>
+    
+
+    <script src="script2.js"></script>
+</body>
+</html>
