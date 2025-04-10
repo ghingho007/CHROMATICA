@@ -1,0 +1,1 @@
+CHROMATICA - All rights reserved.
